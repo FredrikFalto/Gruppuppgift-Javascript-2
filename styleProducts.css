@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    margin: 5px;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navbar - Links Styling */
+.nav-link {
+    font-size: larger;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 500ms ease;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    letter-spacing: 2px;
+    transition: 500ms ease;
+}
+
+/* Navbar - Icons Styling */
+.nav-icons {
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    transition: 500ms ease;
+}
+
+.nav-icons {
+    display: none;
+}
