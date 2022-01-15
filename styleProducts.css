@@ -7,13 +7,14 @@
 }
 
 .card {
-    margin: 5px;
+
 }
 
 .navbar-brand {
     font-size: xx-large;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding-left: 16px;
 }
 
 /* Navbar - Links Styling */

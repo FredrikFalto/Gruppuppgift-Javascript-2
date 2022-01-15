@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="styleProducts.css" />
 
@@ -16,29 +17,36 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a href="index.html" class="navbar-brand">Deliskiuz.</a>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a href="products.html" class="nav-link">Products</a>
-            </li>
-            <li class="nav-item">
-                <a href="find-recipes" class="nav-link">Find Recipes</a>
-                <!-- accounts-view -->
-            </li>
-            <li class="nav-item">
-                <a href="inspiration" class="nav-link">Get Inspiration</a>
-                <!-- add-accounts-view -->
-            </li>
-            <li class="nav-item">
-                <a href="inspiration" class="nav-link">Dinner Generator</a>
-                <!-- add-accounts-view -->
-            </li>
-            <li class="nav-item">
-                <a href="sign-in" class="nav-link">Sign In</a>
-            </li>
-            <li class="nav-item">
-                <a href="search" class="nav-link">Search</a>
-            </li>
-        </ul>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon text-white"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="find-recipes" class="nav-link">Find Recipes</a>
+                    <!-- accounts-view -->
+                </li>
+                <li class="nav-item">
+                    <a href="inspiration" class="nav-link">Get Inspiration</a>
+                    <!-- add-accounts-view -->
+                </li>
+                <li class="nav-item">
+                    <a href="inspiration" class="nav-link">Dinner Generator</a>
+                    <!-- add-accounts-view -->
+                </li>
+                <li class="nav-item">
+                    <a href="sign-in" class="nav-link">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a href="search" class="nav-link">Search</a>
+                </li>
+            </ul>
+        </div>
 
         <li class="nav-icons">
             <a href="" class="navbar-toggler fas fa-user-alt text-dark text-decoration-none"></a>
@@ -53,97 +61,148 @@
     </nav>
 
     <div class="container text-center">
-        <div class="row mb-3">
-            <div class="col-lg-3 col-md-6 mt-3">
+        <div class="row mb-3 mx-1">
+            <div class="col-lg-3 col-md-4 mt-3">
                 <!-- Skapar ett så kallat "card" för att visa produkter i -->
                 <div class="card">
-                    <img class="card-img-top" src="" alt="Home kit">
+                    <img class="card-img-top" src="img/apple-granny-smith-klass1-2.jpeg" alt="Äpple">
                     <div class="card-body">
-                        <h4 class="card-title">Home kit</h4>
-                        <p class="card-text">Inspired by the home kits of the 1960s and a time when our fans cheered on
-                            legends such as George Best, Sir Bobby Charlton and Denis Law.</p>
-
-                        <!-- Knapp för att ropa på vilken modal som ska visas för den aktuella produkten, data-bs-target anropar id -->
+                        <h4 class="card-title">Äpple</h4>
+                        <p class="card-text">Granny Smith klass 1</p>
                         <select name="" id="">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
                         </select>
-                        <a href="#" class="btn btn-success ml-auto mr-1" data-bs-toggle="modal"
-                            data-bs-target="#">Buy</a>
+                        <a href="#" class="btn btn-success ms-auto me-1">Buy</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mt-3">
+            <div class="col-lg-3 col-md-4 mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="" alt="Away kit">
+                    <img class="card-img-top" src="img/kexchoklad-60g-cloetta.jpeg" alt="Kexchoklad">
                     <div class="card-body">
-                        <h4 class="card-title">Away kit</h4>
-                        <p class="card-text">This jersey quite literally puts the ‘M’ in Manchester United. If you take
-                            a closer peek, you can see an ‘M’ has been woven into the pattern of the shirt.</p>
-                        <a href="#" class="btn btn-success ml-auto mr-1" data-bs-toggle="modal"
-                            data-bs-target="#">Buy</a>
+                        <h4 class="card-title">Kexchoklad</h4>
+                        <p class="card-text">Kexchoklad</p>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <a href="#" class="btn btn-success ms-auto me-1">Buy</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mt-3">
+            <div class="col-lg-3 col-md-4 mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="" alt="Third kit">
+                    <img class="card-img-top" src="img/pepsi-max-4x150cl-1.jpeg" alt="Pepsi max">
                     <div class="card-body">
-                        <h4 class="card-title">Third kit</h4>
-                        <p class="card-text">This season’s third shirt pays homage to the away shirt from the 1993/94
-                            season when United completed the club's first-ever Double.</p>
-                        <a href="#" class="btn btn-success ml-auto mr-1" data-bs-toggle="modal"
-                            data-bs-target="#">Buy</a>
-
+                        <h4 class="card-title">Pepsi max</h4>
+                        <p class="card-text">Pepsi max 4x150 cl</p>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <a href="#" class="btn btn-success ms-auto me-1">Buy</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mt-3">
+            <div class="col-lg-3 col-md-4 mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="" alt="Knitted hat">
+                    <img class="card-img-top" src="img/07340062411561_c1l1.jpeg" alt="Nötfärs">
                     <div class="card-body">
-                        <h4 class="card-title">Knitted hat</h4>
-                        <p class="card-text">Top off your winter look. Suitable for winter walks, this stylish hat made
-                            in 100% wool is a must-have for all supporters.</p>
-                        <a href="#" class="btn btn-success ml-auto mr-1" data-bs-toggle="modal"
-                            data-bs-target="#">Buy</a>
+                        <h4 class="card-title">Nötfärs</h4>
+                        <p class="card-text">Nötfärs 12%</p>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <a href="#" class="btn btn-success ms-auto me-1">Buy</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mt-3">
+            <div class="col-lg-3 col-md-4 mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="" alt="Face coverings">
+                    <img class="card-img-top" src="img/kokosmjolk-250ml-santa-maria.jpeg" alt="Kokosmjölk">
                     <div class="card-body">
-                        <h4 class="card-title">Face coverings</h4>
-                        <p class="card-text">Proudly displaying team branding and colours, the stretchable elastic ear
-                            straps along with the soft and breathable fabric made for comfortable wearing.</p>
-                        <a href="#" class="btn btn-success ml-auto mr-1" data-bs-toggle="modal"
-                            data-bs-target="#">Buy</a>
+                        <h4 class="card-title">Kokosmjölk</h4>
+                        <p class="card-text">Kokosmjölk 250ml</p>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <a href="#" class="btn btn-success ms-auto me-1">Buy</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mt-3">
+            <div class="col-lg-3 col-md-4 mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="" alt="Hoodie">
+                    <img class="card-img-top" src="img/oatly-ikaffe.jpeg" alt="iKaffe">
                     <div class="card-body">
-                        <h4 class="card-title">Logo Hoodie</h4>
-                        <p class="card-text">Suitable for matchdays and beyond, this sweatshirt is a must-have for
-                            supporters. Stylish and comfortable, it also features official club branding.</p>
-                        <a href="#" class="btn btn-success ml-auto mr-1" data-bs-toggle="modal"
-                            data-bs-target="#">Buy</a>
+                        <h4 class="card-title">iKaffe</h4>
+                        <p class="card-text">Oatly iKaffe 3%</p>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <a href="#" class="btn btn-success ms-auto me-1">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/spaghetti-1-8kg-barilla.jpeg" alt="Spaghetti">
+                    <div class="card-body">
+                        <h4 class="card-title">Spaghetti</h4>
+                        <p class="card-text">1,8kg</p>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <a href="#" class="btn btn-success ms-auto me-1">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/fryst-lax.jpeg" alt="Laxbitar fryst">
+                    <div class="card-body">
+                        <h4 class="card-title">Laxbitar fryst</h4>
+                        <p class="card-text">4x100g Fisherman</p>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <a href="#" class="btn btn-success ms-auto me-1">Buy</a>
                     </div>
                 </div>
             </div>
@@ -170,9 +229,6 @@
             </section>
             <!-- Section: Social media -->
         </div>
-        <!-- Begin FatSecret Platform API HTML Attribution Snippet -->
-        <a href="https://platform.fatsecret.com">Powered by FatSecret</a>
-        <!-- End FatSecret Platform API HTML Attribution Snippet -->
     </footer>
 </body>
 
