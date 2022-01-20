@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleLogin.css" />
+    <title>Login form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Deliskiuz</div>
+        <div class="title signup">Register Account</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slider" id="login" checked />
+          <input type="radio" name="slider" id="signup" />
+          <label for="login" class="slide login">Sign in</label>
+          <label for="signup" class="slide signup">Register Account</label>
+          <div class="slide-tab"></div>
+        </div>
+        <div class="form-inner">
+          <!-- Sign In -->
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="Email Adress" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required />
+            </div>
+            <!-- <div class="pass-link"><a href="#">Forgot password?</a></div> -->
+            <div class="field">
+              <input type="submit" value="Sign In" />
+            </div>
+            <div class="signup-link">
+              Not a member? <a href="#">Create a account</a>
+            </div>
+          </form>
+          <!-- End - Sign In  -->
+
+          <!-- Register Account -->
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="Email Adress" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm password" required />
+            </div>
+            <div class="field">
+              <input type="submit" value="Register Account" />
+            </div>
+          </form>
+          <!-- End - Register Account -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+      const loginForm = document.querySelector('form.login');
+      const signupForm = document.querySelector('form.signup');
+      const loginBtn = document.querySelector('label.login');
+      const signupBtn = document.querySelector('label.signup');
+      const signupLink = document.querySelector('.signup-link a');
+      const loginText = document.querySelector('.title-text .login');
+      const signupText = document.querySelector('.title-text .signup');
+      signupBtn.onclick = () => {
+        loginForm.style.marginLeft = '-50%';
+        loginText.style.marginLeft = '-50%';
+      };
+      loginBtn.onclick = () => {
+        loginForm.style.marginLeft = '0%';
+        signupText.style.marginLeft = '0%';
+      };
+      signupLink.onclick = () => {
+        signupBtn.click();
+        return false;
+      };
+    </script>
+  </body>
+</html>
