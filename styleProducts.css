@@ -1,47 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
 
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .card {
-
 }
 
 .navbar-brand {
-    font-size: xx-large;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-left: 16px;
+  font-size: xx-large;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 16px;
 }
 
 /* Navbar - Links Styling */
 .nav-link {
-    font-size: larger;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 500ms ease;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-weight: 500;
+  font-size: larger;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 500ms ease;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 500;
 }
 
 .nav-link:hover {
-    letter-spacing: 2px;
-    transition: 500ms ease;
+  letter-spacing: 2px;
+  transition: 500ms ease;
 }
 
 /* Navbar - Icons Styling */
 .nav-icons {
-    list-style: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 24px;
-    transition: 500ms ease;
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: 500ms ease;
 }
 
 .nav-icons {
-    display: none;
+  display: none;
+}
+
+#productList {
+  width: 500px;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  box-shadow: 3px 7px 6px 2px #747474;
+  margin-left: -250px;
+  margin-top: -300px;
+  display: none;
+}
+
+#modalBg {
+  background: black;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  opacity: 0.5;
 }
