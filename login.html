@@ -13,87 +13,68 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="styleLogin.css" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Login form</title>
   </head>
   <body>
- <!-- Start Navbar -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <a href="index.html" class="navbar-brand">Deliskiuz.</a>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top w-100">
+      <a href="index.html" class="navbar-brand">Deliskiuz.</a>
 
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon text-white"></span>
-  </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto me-3">
-      <li class="nav-item">
-        <a href="products.html" class="nav-link">Products</a>
-      </li>
-      <li class="nav-item">
-        <a href="find-recipes" class="nav-link">Recipes</a>
-        <!-- accounts-view -->
-      </li>
-      <li class="nav-item">
-        <a href="inspiration" class="nav-link">Inspiration</a>
-      </li>
-      <li class="nav-item">
-        <a href="contact.html" class="nav-link">Contact</a>
-      </li>
-      <!-- Sign in -->
-      <li class="nav-item">
-        <a href="" class="nav-link"  data-bs-toggle="dropdown">Sign In</a>
-        <ul class="dropdown-menu dropdown-menu-end p-3 text-center" style="z-index: 1;">
-          <li>
-            <form action="">
-            <h5 class="nav-header" style="text-align: center; margin-bottom: 10px;">SIGN IN AT DELISKIUZ</h5>
-            <p style="font-weight: 500;">Email Adress</p>
-            <input type="text" style="margin-bottom: 10px;" placeholder="Email" required/>         
-            <p style="font-weight: 500;" >Password</p>
-            <input type="password" style="margin-bottom: 10px;" placeholder="Password" required/>
-          </form>
-            <form action="submit-btn">
-            <button class="btn btn-success" >Sign In</button>
-          </form>
-              <hr>
-            <p>Forgot your password? <a href="login.html">Reset Password</a></p>
-            <p>Dont have an account? <a href="login.html">Create Account</a></p>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
           </li>
-          <!-- End - Sign In -->
-
-
-
-    </ul>
-  </div>
-
-  <li class="nav-icons">
-    <a
-      href=""
-      class="navbar-toggler fas fa-user-alt text-dark text-decoration-none"
-    ></a>
-  </li>
-
-  <li class="nav-icons">
-    <a
-      href=""
-      class="navbar-toggler fas fa-search text-dark text-decoration-none"
-    ></a>
-  </li>
-  <li class="nav-icons">
-    <a
-      href=""
-      class="navbar-toggler-icon text-dark text-decoration-none"
-    ></a>
-  </li>
-</nav>
-<!-- End Navbar -->
+          <li class="nav-item">
+            <a href="recipes.html" class="nav-link">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <!-- Sign in -->
+          <li class="nav-item">
+            <a href="" class="nav-link"  data-bs-toggle="dropdown">Sign In</a>
+            <ul class="dropdown-menu dropdown-menu-end p-3 text-center" style="z-index: 1;">
+              <li>
+                <form action="">
+                <h5 class="nav-header" style="text-align: center; margin-bottom: 10px;">SIGN IN AT DELISKIUZ</h5>
+                <p style="font-weight: 500;">Email Adress</p>
+                <input type="text" style="margin-bottom: 10px;" placeholder="Email" required/>         
+                <p style="font-weight: 500;" >Password</p>
+                <input type="password" style="margin-bottom: 10px;" placeholder="Password" required/>
+              </form>
+                <form action="submit-btn">
+                <button class="btn btn-success" >Sign In</button>
+              </form>
+                  <hr>
+                <p>Forgot your password? <a href="login.html">Reset Password</a></p>
+                <p>Dont have an account? <a href="login.html">Create Account</a></p>
+              </li>
+              <!-- End - Sign In -->
+        </ul>
+      </div>
+      <li class="nav-icons">
+        <a
+          href=""
+          class="navbar-toggler-icon text-dark text-decoration-none"
+        ></a>
+      </li>
+    </nav>
+    <!-- End Navbar -->
 
     <div class="wrapper">
       <div class="title-text">
@@ -169,5 +150,42 @@
         return false;
       };
     </script>
+
+        <!-- Start - Footer -->
+        <footer class="bg-light text-center mt-5">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <h5>DELISKIUZ.</h5>
+              <h6>Check us Out on Our Social Media</h6>
+              <!-- Facebook -->
+              <a
+                class="btn btn-floating"
+                href="#!"
+                role="button"
+    
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <!-- Instagram -->
+              <a
+                class="btn btn-floating"
+                href="#!"
+                role="button"
+    
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <!-- Pinterest -->
+              <a
+                class="btn btn-floating"
+                href="#!"
+                role="button"
+                ><i class=" fab fa-pinterest"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+        </footer>
+        <!-- End - Footer -->
   </body>
 </html>
