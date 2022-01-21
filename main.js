@@ -12,7 +12,7 @@ const products = [
     image: "img/kexchoklad-60g-cloetta.jpeg",
     alt: "Kexchoklad",
     title: "Kexchoklad",
-    text: "kexchoklad",
+    text: "Kexchoklad",
     desc: "De goda kexchokladen består idag av tre lager frasiga chokladöverdragna rån som blev grunden till dess namn, Kexchoklad. Överdraget på rånen består av en ljuvlig mjölkchoklad, vilket skapar en utsökt kombination. Chokladen finns i olika förpackningar och storlekar. Kexchoklad passar perfekt för många olika tillfällen för att fylla på med energi i skidbacken, på jobbet eller varför inte njuta av den på en picknic. Förpackningens färger och former är välkänd i alla åldrar och det klassiska rutmönstret känner de flesta igen.",
   },
   {
@@ -44,7 +44,7 @@ const products = [
     image: "img/oatly-ikaffe.jpeg",
     alt: "iKaffe",
     title: "iKaffe",
-    text: "Oatly iKaffe 3%<",
+    text: "Oatly iKaffe 3%",
     desc: "Granny Smith är ett blankt äpple i klargrön färg med vitt, fast fruktkött som har frisk och syrlig smak. När äpplet blivit riktigt moget är fruktköttet mjukare och smaken mer söt. Granny Smith har lång hållbarhet och är ett bra dessertäpple som passar bra till allt från pajer och kompotter till att äta rårivet eller ugnsstekt.",
   },
   {
@@ -52,7 +52,7 @@ const products = [
     image: "img/spaghetti-1-8kg-barilla.jpeg",
     alt: "Spaghetti",
     title: "Spaghetti",
-    text: "1,8kg",
+    text: "Barilla Spaghetti 1,8kg",
     desc: "Granny Smith är ett blankt äpple i klargrön färg med vitt, fast fruktkött som har frisk och syrlig smak. När äpplet blivit riktigt moget är fruktköttet mjukare och smaken mer söt. Granny Smith har lång hållbarhet och är ett bra dessertäpple som passar bra till allt från pajer och kompotter till att äta rårivet eller ugnsstekt.",
   },
   {
