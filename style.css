@@ -78,3 +78,17 @@ i {
   color: var(--color-secondary);
   margin: 0 10px;
 }
+
+#fullName,
+#emailAdress,
+#createPassword,
+#user,
+#password {
+  width: 100%;
+}
+
+/* Button Signup */
+/* #signup,
+#signin {
+  padding: 15px;
+} */
