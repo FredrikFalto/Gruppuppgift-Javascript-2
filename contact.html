@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="styleContact.css" />
 
     <title>Contact - Deliskiuz.</title>
 </head>
@@ -92,9 +92,12 @@
             <h2>Contact us</h2>
             <div id="error_message"> 
             </div>
-            <form action="" id="myform" onsubmit="return validate();">
+
+            <!--  onsubmit="sendForm()" -->
+            <!-- ; onsubmit="return validate(); -->
+            <form action="" id="myform" onsubmit="return validate();">                  
                 <div class="input_field">
-                    <input type="text" placeholder="Name" id="name">
+                    <input type="text" placeholder="Name" id="name"> 
                 </div>
                 <div class="input_field">
                     <input type="text" placeholder="Subject" id="subject">
@@ -108,7 +111,14 @@
                 <div class="input_field">
                     <textarea placeholder="Message" id="message"></textarea>
                 </div>
-                <btn class="btn">
+
+                <!-- <div class="submit-button">
+                  <input type="submit" 
+                  value='Send message'
+                  class='btn btn-success'
+                  onsubmit="sendEmail()"
+                  /></div> -->
+                 <btn class="btn">
                     <input type="submit" value="Submit">        
                 </div>
             </form>
@@ -160,7 +170,6 @@
         
     </div>
 
-
     <!-- Start - Footer -->
     <footer class="bg-light text-center mt-5">
       <!-- Grid container -->
@@ -172,24 +181,27 @@
           <!-- Facebook -->
           <a
             class="btn btn-floating"
-            href="#!"
+            href="https://facebook.com"
             role="button"
+            target="_blank"
 
             ><i class="fab fa-facebook-f"></i
           ></a>
           <!-- Instagram -->
           <a
             class="btn btn-floating"
-            href="#!"
+            href="https://instagram.com"
             role="button"
+            target="_blank"
 
             ><i class="fab fa-instagram"></i
           ></a>
           <!-- Pinterest -->
           <a
             class="btn btn-floating"
-            href="#!"
+            href="https://pinterest.com"
             role="button"
+            target="_blank"
             ><i class=" fab fa-pinterest"></i
           ></a>
         </section>
@@ -197,6 +209,7 @@
       </div>
     </footer>
     <!-- End - Footer -->
+    
 </body>
 <script src="contact.js"></script>
 </html>

@@ -66,6 +66,4 @@ function welcomeUser() {
             document.getElementById("welcome").innerHTML = "Welcome, " + element.name;        
             
         });
-        
-
 }

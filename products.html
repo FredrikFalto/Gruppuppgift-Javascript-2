@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
-    <link rel="stylesheet" href="styleProducts.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Products - Deliskiuz.</title>
   </head>
@@ -126,18 +126,23 @@
     <!-- Button trigger modal -->
     <div id="modalBg"></div>
     <div class="card" id="productList" style="display: hidden">
-      <div id="shoppingCartListProducts" class="card-body">s</div>
+      <div id="shoppingCartListProducts" class="card-body"></div>
       <div class="card-footer">
         <a class="btn btn-primary">Check out</a>
         <a class="btn btn-danger">Buy more</a>
       </div>
     </div>
-    <div class="container text-center">
+    <div class="container p-4 text-center">
       <input
         type="text"
         id="searchProducts"
-        style="width: 100%"
-        placeholder="Sök produkter"
+        style="
+          width: 100%;
+          padding: 10px;
+          border-radius: 10px;
+          border: 1px solid grey;
+        "
+        placeholder="Search products"
       />
       <div id="root" class="row mb-3 mx-1"></div>
     </div>
@@ -151,15 +156,27 @@
           <h5>DELISKIUZ.</h5>
           <h6>Check us Out on Our Social Media</h6>
           <!-- Facebook -->
-          <a class="btn btn-floating" href="#!" role="button"
+          <a
+            class="btn btn-floating"
+            href="https://facebook.com"
+            role="button"
+            target="_blank"
             ><i class="fab fa-facebook-f"></i
           ></a>
           <!-- Instagram -->
-          <a class="btn btn-floating" href="#!" role="button"
+          <a
+            class="btn btn-floating"
+            href="https://instagram.com"
+            role="button"
+            target="_blank"
             ><i class="fab fa-instagram"></i
           ></a>
           <!-- Pinterest -->
-          <a class="btn btn-floating" href="#!" role="button"
+          <a
+            class="btn btn-floating"
+            href="https://pinterest.com"
+            role="button"
+            target="_blank"
             ><i class="fab fa-pinterest"></i
           ></a>
         </section>
@@ -167,7 +184,6 @@
       </div>
     </footer>
     <!-- End - Footer -->
-
     <script src="main.js"></script>
   </body>
 </html>

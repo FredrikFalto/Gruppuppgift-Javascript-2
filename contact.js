@@ -1,4 +1,13 @@
 
+function sendEmail(e) {
+    e.preventDefault ();
+    emailjs.sendForm('service_yil2fuj', 'template_f1daxsm', e.target, "user_KcSNBl8d6Alo2ZATWZDvH"
+    ).then (res => {
+    console.log(res);
+    }).catch(err => console.log(err));
+    e.target.reset()
+}
+
 
 function validate() {
     var name = document.getElementById("name").value;
@@ -7,7 +16,6 @@ function validate() {
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
     var error_message = document.getElementById("error_message");
-
     error_message.style.padding = "10px";
 
     var text;

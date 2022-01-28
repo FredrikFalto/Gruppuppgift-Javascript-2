@@ -21,7 +21,7 @@ const products = [
     alt: "Pepsi max",
     title: "Pepsi max",
     text: "Pepsi max 4x150 cl",
-    desc: "Granny Smith är ett blankt äpple i klargrön färg med vitt, fast fruktkött som har frisk och syrlig smak. När äpplet blivit riktigt moget är fruktköttet mjukare och smaken mer söt. Granny Smith har lång hållbarhet och är ett bra dessertäpple som passar bra till allt från pajer och kompotter till att äta rårivet eller ugnsstekt.",
+    desc: "Njut av den uppfriskande smaken av Pepsi Max, maximum taste no sugar. Perfekt som törstsläckare och idealisk till din favoritmat. Pepsi är ett av världens starkaste varumärken och Pepsi Max är ett av de mest sålda läskvarumärkena i det sockerfria läsksegmentet. Pepsi Max är en sockerfri cola med en bra balans mellan söta och syrliga toner. Njut av din Pepsi Max för dig själv eller tillsammans med vänner och familj. Pepsi Max är en läsk som passar både vegetarianer och veganer. Pepsi Max bör serveras väl kyld, gärna med is. Varför inte prova en smaksatt cola, såsom Pepsi Max Lime? Våra burkar och flaskor kan återvinnas, så glöm inte att panta!",
   },
   {
     id: null,
@@ -29,7 +29,7 @@ const products = [
     alt: "Nötfärs",
     title: "Nötfärs",
     text: "Nötfärs 12%",
-    desc: "Granny Smith är ett blankt äpple i klargrön färg med vitt, fast fruktkött som har frisk och syrlig smak. När äpplet blivit riktigt moget är fruktköttet mjukare och smaken mer söt. Granny Smith har lång hållbarhet och är ett bra dessertäpple som passar bra till allt från pajer och kompotter till att äta rårivet eller ugnsstekt.",
+    desc: "Nötfärs tillagar du köttfärssåser, Biff à la Lindström och lasagne. För att inte tala om hamburgare av alla de slag. Till köttbullar, färsbiffar och köttfärslimpa passar finmalen färs bäst.",
   },
   {
     id: null,
@@ -37,7 +37,7 @@ const products = [
     alt: "Kokosmjölk",
     title: "Kokosmjölk",
     text: "Kokosmjölk 250ml",
-    desc: "Granny Smith är ett blankt äpple i klargrön färg med vitt, fast fruktkött som har frisk och syrlig smak. När äpplet blivit riktigt moget är fruktköttet mjukare och smaken mer söt. Granny Smith har lång hållbarhet och är ett bra dessertäpple som passar bra till allt från pajer och kompotter till att äta rårivet eller ugnsstekt.",
+    desc: "Kokosmjölk från Santa Maria. Kokosmjölk är gjord av pressat kokosfruktkött. Används med fördel i asiatiska grytor.",
   },
   {
     id: null,
@@ -45,7 +45,7 @@ const products = [
     alt: "iKaffe",
     title: "iKaffe",
     text: "Oatly iKaffe 3%",
-    desc: "Granny Smith är ett blankt äpple i klargrön färg med vitt, fast fruktkött som har frisk och syrlig smak. När äpplet blivit riktigt moget är fruktköttet mjukare och smaken mer söt. Granny Smith har lång hållbarhet och är ett bra dessertäpple som passar bra till allt från pajer och kompotter till att äta rårivet eller ugnsstekt.",
+    desc: "Havredryck att ha i kaffet och som går utmärkt att skumma. Oatly har tagit fram denna dryck för alla baristas där ute.",
   },
   {
     id: null,
@@ -53,7 +53,7 @@ const products = [
     alt: "Spaghetti",
     title: "Spaghetti",
     text: "Barilla Spaghetti 1,8kg",
-    desc: "Granny Smith är ett blankt äpple i klargrön färg med vitt, fast fruktkött som har frisk och syrlig smak. När äpplet blivit riktigt moget är fruktköttet mjukare och smaken mer söt. Granny Smith har lång hållbarhet och är ett bra dessertäpple som passar bra till allt från pajer och kompotter till att äta rårivet eller ugnsstekt.",
+    desc: "Pasta Spaghetti i storpack från Barilla är Italiens mest klassiska pastasort i en förpackning på 1,8 kilo. Spaghetti pasta har sitt ursprung från Neapel där Antonio Vivani 1842 döpte den till Spaghetti eftersom han tyckte att den såg ut som små snören. Detta är en lång pasta som från början var ännu längre innan den kortades ner från ursprungliga 50 centimeter till dagens mer praktiska 25 centimeter. Barillas Spaghetti n.5 är en durumvetepasta som med sin traditionella karaktär är ett måste i köket.",
   },
   {
     id: null,
@@ -61,7 +61,7 @@ const products = [
     alt: "Laxbitar fryst",
     title: "Laxbitar fryst",
     text: "4x100g Fisherman",
-    desc: "Granny Smith är ett blankt äpple i klargrön färg med vitt, fast fruktkött som har frisk och syrlig smak. När äpplet blivit riktigt moget är fruktköttet mjukare och smaken mer söt. Granny Smith har lång hållbarhet och är ett bra dessertäpple som passar bra till allt från pajer och kompotter till att äta rårivet eller ugnsstekt.",
+    desc: "Mindre bitar av odlad norsk lax. Bra till sallader, pasta och gratänger.",
   },
 ];
 
