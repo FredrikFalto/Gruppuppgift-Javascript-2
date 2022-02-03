@@ -52,18 +52,3 @@ function logIn() {
     }
 }
 
-//Onload function
-function welcomeUser() {
-    //Gets user information
-    userAccountString = window.localStorage.getItem('account');
-    userAccountObj = JSON.parse(userAccountString);
-
-    var tempoArray = [];
-        tempoArray.push(userAccountObj);
-
-        //Welcome message on Index.html
-        tempoArray.forEach(element => {
-            document.getElementById("welcome").innerHTML = "Welcome, " + element.name;        
-            
-        });
-}
