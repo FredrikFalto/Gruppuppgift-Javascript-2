@@ -1,17 +1,22 @@
-fetch("/products.json")
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        localStorage.setItem("produkter", JSON.stringify(data));
-    });
+// fetch("/products.json")
+//     .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {
+//         localStorage.setItem("produkter", JSON.stringify(data));
+//     });
 
-var retrievedObject = localStorage.getItem("produkter");
+// var retrievedObject = localStorage.getItem("produkter");
 
-const products = JSON.parse(retrievedObject);
+// const products = JSON.parse(retrievedObject);
+
+// console.log(products);
+
+
+var products = JSON.parse(localStorage.getItem("products"));
 
 const root = document.getElementById("root");
-products.products.map((product, i) => {
+products.map((product, i) => {
     product.id = i;
     root.innerHTML += `
   
@@ -56,7 +61,7 @@ function test() {
     const selected = document.querySelectorAll("select");
     buyProducts.forEach((btn, i) => {
         btn.addEventListener("click", () => {
-            let boughtItem = Object.assign([], products.products[i]);
+            let boughtItem = Object.assign([], products[i]);
             boughtItem.number = selected[i].value;
             productList.push(boughtItem);
             console.log(productList);
@@ -69,11 +74,11 @@ function test() {
     });
     detailsProduct.forEach((btn, i) => {
         btn.addEventListener("click", () => {
-            console.log(products.products[i].desc);
+            console.log(products[i].desc);
             shoppingCartList.style.display = "block";
             modalBg.style.display = "block";
             document.body.style.overflow = "hidden";
-            shoppingCartListProducts.innerHTML = `<p>${products.products[i].desc}</p>`;
+            shoppingCartListProducts.innerHTML = `<p>${products[i].desc}</p>`;
         });
     });
 }
@@ -105,7 +110,7 @@ test();
 
 let searchField = document.getElementById("searchProducts");
 searchField.addEventListener("keyup", () => {
-    let result = products.products.filter((product) =>
+    let result = products.filter((product) =>
         product.title.toLowerCase().includes(searchField.value.toLowerCase())
     );
     root.innerHTML = "";
